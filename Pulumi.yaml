@@ -1,0 +1,13 @@
+name: ${PROJECT}
+runtime:
+  name: nodejs
+  options:
+    typescript: true
+description: ${DESCRIPTION}
+main: infra\
+config: stacks\
+template:
+  config:
+    aws:region:
+      description: The AWS region to deploy into
+      default: eu-west-1
